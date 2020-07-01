@@ -4,10 +4,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/207eb8228a/UntitledProject/style.css">
         <title>Spotify</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="player">
+            <div class="player-item ">
+                <img src="https://stonemusic.it/wp-content/uploads/2017/07/Abbey-Road-cover.jpg" alt="cover">
+                <div class="trackplayed">
+                    <span class="trackname">Come together</span>
+                    <span class="author">The Beatles</span>
+                </div>
+                <div class="iconsplayer">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+            <div class="player-item" id="player-navigator">
+                <div class="navigator">
+                    <div class="navigator-item">
+                        <span class="icon-shuffle"></span>
+                    </div>
+                    <div class="navigator-item">
+                        <span class="icon-back"></span>
+                    </div>
+                    <div class="navigator-item" id="play">
+                        <span class="icon-play"></span>
+                    </div>
+                    <div class="navigator-item">
+                        <span class="icon-next"></span>
+                    </div>
+                    <div class="navigator-item">
+                        <span class="icon-repeat"></span>
+                    </div>
+                </div>
+                <div class="timebar">
+                    <div class="start-time">
+                        <span>0:26</span>
+                    </div>
+                    <div class="time-bar-cont">
+                        <div class="time-bar-line">
+                            <div class="time-bar-line-active"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="end-time">
+                        <span>4:19</span>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="player-item leftside-play">
+                <span class="icon-playlist"></span>
+                <span class="icon-comp"></span>
+                <span class="icon-speaker"></span>
+                <div class="audio-bar-cont">
+                    <div class="audio-bar-line">
+                        <div class="audio-bar-line-active"></div>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
         <div class="container">
@@ -21,19 +84,19 @@
                     <div class="aside-nav">
                         <div class="aside-nav-item">
                             <div class="iconcont">
-                                <i class="fas fa-home"></i>
+                                <span class="icon-home"></span>
                             </div>
                             <p>Home</p>
                         </div>
-                        <div class="aside-nav-item search">
+                        <div class="aside-nav-item">
                             <div class="iconcont">
-                                <i class="fas fa-search"></i>
+                                <span class="icon-search"></span>
                             </div>
                             <p>Cerca</p>
                         </div>
                         <div class="aside-nav-item">
                             <div class="iconcont">
-                                <i class="fas fa-book"></i>
+                                <span class="icon-library"></span>
                             </div>
                             <p>La tua libreria</p>
                         </div>
@@ -43,8 +106,16 @@
                             <div class="iconcont">
                                 <i class="fas fa-arrow-circle-down"></i>
                             </div>
-                            <p>install App</p>
+                            <p>Install App</p>
                         </div>
+                        <div class="aside-nav-item">
+                            <div class="iconcont">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <p>Name User</p>
+                        </div>
+
+
 
 
                     </div>

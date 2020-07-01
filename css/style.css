@@ -6,16 +6,158 @@
 
 body {
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 .player {
     width: 100%;
     height: 90px;
     background-color: #282828;
+    color: #d2d2d2;
     position: fixed;
     bottom: 0px;
     border: 1px solid black;
     z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    text-transform: capitalize;
+}
+
+.player .author:hover,
+.player .far:hover,
+.player .navigator-item:hover,
+.player .leftside-play span:hover,
+.player .author:hover {
+    color: white;
+    border: white;
+}
+
+.player .leftside-play .audio-bar-line-active:hover,
+.player .timebar .time-bar-line-active:hover {
+    background-color: white;
+}
+
+
+.player-item {
+    display: flex;
+    align-items: center;
+    }
+
+.player img {
+    width: 42px;
+    height: 42px;
+}
+
+.player .trackplayed {
+    padding: 13px;
+}
+.player .trackplayed .trackname {
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+}
+.player .trackplayed .author{
+    font-size: 10px;
+    font-weight: 100;
+    display: block;
+}
+
+#player-navigator {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+.player .iconsplayer {
+    display: flex;
+    flex-direction: column;
+}
+
+.player .iconsplayer .far{
+    padding: 2px 8px;
+}
+
+.player .navigator {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.navigator-item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.navigator-item span{
+    font-size: 18px;
+}
+
+#play {
+    border: 2px solid #d2d2d2;;
+    border-radius: 50%;
+}
+
+.timebar {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    align-items: center;
+}
+
+.time-bar-cont {
+    width: 200px;
+    margin: 0 15px;
+
+}
+
+.time-bar-line {
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #535353;
+    position:relative
+}
+
+.time-bar-line-active {
+    width: 10%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #b3b3b3;
+    position:absolute;
+    left: 0;
+}
+
+.leftside-play span {
+    padding: 0 15px;
+}
+
+.audio-bar-cont {
+    width: 75px;
+    margin: 0 15px;
+
+}
+
+.audio-bar-line {
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #535353;
+    position:relative
+}
+
+.audio-bar-line-active {
+    width: 70%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #b3b3b3;
+    position:absolute;
+    left: 0;
 }
 
 
@@ -30,15 +172,16 @@ aside {
     height: 100%;
     float: left;
     background-color: #000;
-    color: #7e7d70;
+    color: #d2d2d2;
     display: flex;
     flex-direction: column;
     padding: 5px 11px;
     align-items: center;
+    font-size: 14px;
 }
 
-aside i {
-    font-size: 28px;
+aside span {
+    font-size: 22px;
 }
 
 aside .logo {
@@ -49,6 +192,7 @@ aside .logo {
 
 aside .logo i {
     padding-bottom: 5px;
+    font-size: 28px;
 }
 
 aside .logo img {
@@ -70,6 +214,7 @@ aside .aside-cont {
 aside .aside-nav {
     display: flex;
     flex-direction: column;
+    padding-top: 6px;
 
 }
 
@@ -82,8 +227,8 @@ aside .aside-nav-item:hover {
     color:white;
 }
 
-aside .aside-nav i {
-    padding: 12px 0;
+aside .aside-nav span {
+    padding: 6px 0;
 }
 
 
@@ -109,6 +254,11 @@ nav {
 
 
 @media screen and (min-width: 768px) {
+
+    .player .iconsplayer {
+        flex-direction: row;
+    }
+
     aside {
         width: 230px;
         padding: 25px;
@@ -136,14 +286,14 @@ nav {
         height: 40px;
     }
     aside .aside-nav {
-        padding-top: 10px;
-    }
-    aside .aside-nav i {
-        padding: 15px 0;
+        padding-top: 25px;
     }
 
-    aside .search {
-        order: -1;
+    aside .aside-nav-item {
+        padding-bottom: 15px;
+    }
+    aside .aside-nav span {
+        padding: 8px 0;
     }
 
     nav {
