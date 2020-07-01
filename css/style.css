@@ -272,6 +272,7 @@ main{
     background-color: #141922;
     height: 100%;
     padding-top: 90px;
+    overflow-y: auto;
 }
 
 nav {
@@ -286,14 +287,17 @@ nav .nav-item {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
-    padding: 23px 12px;
+    padding: 23px 12px 5px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .nav-item .green-line {
-    display: none;
+    width: 30px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .nav-item:hover {
@@ -301,11 +305,56 @@ nav .nav-item {
 }
 
 .nav-item:hover .green-line {
-    width: 30px;
-    height: 2px;
-    margin-top: 6px;
     background-color: #adff2f;
-    display: block;
+
+}
+
+.music {
+    width: 100%;
+    height: 100%;
+    padding-left: 22px;
+    color:white;
+}
+
+.music h2 {
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+.music-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+}
+
+.music-row .music-card {
+    padding-top: 20px;
+    padding-right: 15px;
+    flex: 1 1 170px;
+    max-width: 180px;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.music-row img{
+    width: 100%;
+    height: auto;
+}
+
+.music-row .music-card  h3{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.music-row .music-card  span{
+    font-size: 13px;
 }
 
 
