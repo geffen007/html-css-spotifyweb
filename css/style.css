@@ -28,14 +28,14 @@ body {
 .player .author:hover,
 .player .far:hover,
 .player .navigator-item:hover,
-.player .leftside-play i:hover,
+.player .rightside-play i:hover,
 .player .author:hover {
     color: white;
     border: white;
 }
 
-.player .leftside-play .audio-bar-line-active:hover,
-.player .timebar .time-bar-line-active:hover {
+.player .rightside-play .audio-bar-cont:hover .audio-bar-line-active,
+.player .time-bar .time-bar-cont:hover .time-bar-line-active{
     background-color: white;
 }
 
@@ -143,15 +143,15 @@ body {
     display: none;
 }
 
-.leftside-play {
+.rightside-play {
     justify-content: flex-end;
 }
 
-.leftside-play i {
+.rightside-play i {
 display: none;
 }
 
-.leftside-play .icon-speaker {
+.rightside-play .icon-speaker {
     display: block;
 }
 
@@ -377,7 +377,7 @@ nav .nav-item {
         display: block;
     }
 
-    .leftside-play i {
+    .rightside-play i {
         padding: 0 6px;
         display: block;
     }
