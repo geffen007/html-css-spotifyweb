@@ -105,6 +105,9 @@ body {
     border-radius: 50%;
 }
 
+#play i{
+    padding-left: 2px;
+}
 .time-bar {
     display: flex;
     flex-direction: row;
@@ -182,7 +185,6 @@ display: none;
 }
 
 aside {
-    width: 50px;
     height: 100%;
     float: left;
     background-color: #000;
@@ -192,6 +194,7 @@ aside {
     padding: 5px 11px;
     align-items: center;
     font-size: 14px;
+
 }
 
 aside i {
@@ -249,12 +252,11 @@ aside .aside-nav i {
 main{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
-
-
-
-nav {
+.black-bar {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     height: 90px;
@@ -264,6 +266,46 @@ nav {
     right: 0px;
 
 
+}
+
+.musics {
+    background-color: #141922;
+    height: 100%;
+    padding-top: 90px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+nav .nav-item {
+    color: #a3a3a3;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 23px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item .green-line {
+    display: none;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+.nav-item:hover .green-line {
+    width: 30px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #adff2f;
+    display: block;
 }
 
 
@@ -282,15 +324,20 @@ nav {
         margin: 0 12px;
     }
 
+    .time-bar .time {
+        display: block;
+    }
+
     .leftside-play i {
         padding: 0 6px;
         display: block;
     }
 
+
     aside {
-        width: 230px;
         padding: 25px;
         align-items: flex-start;
+        flex: 0 0 230px;
     }
 
     aside .logo {
@@ -324,7 +371,7 @@ nav {
         padding: 8px 0;
     }
 
-    nav {
+    .black-bar {
         top: 0;
         left: 230px;
         right: 0px;
