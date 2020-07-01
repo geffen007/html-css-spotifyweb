@@ -28,7 +28,7 @@ body {
 .player .author:hover,
 .player .far:hover,
 .player .navigator-item:hover,
-.player .leftside-play span:hover,
+.player .leftside-play i:hover,
 .player .author:hover {
     color: white;
     border: white;
@@ -43,7 +43,9 @@ body {
 .player-item {
     display: flex;
     align-items: center;
-    }
+    flex-grow: 1;
+
+}
 
 .player img {
     width: 42px;
@@ -67,7 +69,7 @@ body {
 #player-navigator {
     display: flex;
     flex-direction: column;
-    flex-grow: 3;
+    flex-grow: 2;
 }
 
 .player .iconsplayer {
@@ -76,7 +78,7 @@ body {
 }
 
 .player .iconsplayer .far{
-    padding: 2px 8px;
+    display: none;
 }
 
 .player .navigator {
@@ -91,11 +93,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 12px;
+    margin: 0 0;
 }
 
-.navigator-item span{
-    font-size: 18px;
+.navigator-item i{
+    font-size: 14px;
 }
 
 #play {
@@ -103,15 +105,16 @@ body {
     border-radius: 50%;
 }
 
-.timebar {
+.time-bar {
     display: flex;
     flex-direction: row;
-    flex-grow: 3;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .time-bar-cont {
-    width: 200px;
+    width: 90%;
     margin: 0 15px;
 
 }
@@ -133,14 +136,25 @@ body {
     left: 0;
 }
 
-.leftside-play span {
-    padding: 0 15px;
+.time-bar .time {
+    display: none;
+}
+
+.leftside-play {
+    justify-content: flex-end;
+}
+
+.leftside-play i {
+display: none;
+}
+
+.leftside-play .icon-speaker {
+    display: block;
 }
 
 .audio-bar-cont {
     width: 75px;
     margin: 0 15px;
-
 }
 
 .audio-bar-line {
@@ -180,7 +194,7 @@ aside {
     font-size: 14px;
 }
 
-aside span {
+aside i {
     font-size: 22px;
 }
 
@@ -227,7 +241,7 @@ aside .aside-nav-item:hover {
     color:white;
 }
 
-aside .aside-nav span {
+aside .aside-nav i {
     padding: 6px 0;
 }
 
@@ -257,6 +271,20 @@ nav {
 
     .player .iconsplayer {
         flex-direction: row;
+    }
+
+    .player .iconsplayer .far{
+        display: block;
+        padding: 2px 8px;
+    }
+
+    .navigator-item {
+        margin: 0 12px;
+    }
+
+    .leftside-play i {
+        padding: 0 6px;
+        display: block;
     }
 
     aside {
@@ -292,7 +320,7 @@ nav {
     aside .aside-nav-item {
         padding-bottom: 15px;
     }
-    aside .aside-nav span {
+    aside .aside-nav i {
         padding: 8px 0;
     }
 
