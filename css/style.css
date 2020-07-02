@@ -235,6 +235,7 @@ aside p{
 
 aside .aside-cont {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -263,6 +264,20 @@ aside .aside-nav i {
     padding: 6px 0;
 }
 
+aside .fa-arrow-circle-down {
+    font-size: 18px;
+}
+
+.my-playlist {
+    display: none;
+}
+
+
+.white-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
 
 main{
     display: flex;
@@ -540,6 +555,7 @@ nav .nav-item {
         padding-bottom: 7px;
         padding-top: 7px;
         padding-left: 2px;
+        margin-left: -9px;
         justify-content: flex-start;
         align-items: center;
     }
@@ -553,6 +569,28 @@ nav .nav-item {
     aside .aside-nav i {
         padding: 8px 0;
     }
+
+    .my-playlist {
+        display: flex;
+        padding-top: 10px;
+    }
+    .create-playlist {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .my-playlist .plus {
+        height: 37px;
+        width: 37px;
+        background-color: #d2d2d2;
+        color:#000000;
+        text-align: center;
+        line-height: 37px;
+        font-size: 28px;
+        margin-right: 10px;
+    }
+
 
     .black-bar {
         top: 0;
